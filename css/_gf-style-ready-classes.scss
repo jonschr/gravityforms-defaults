@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Sizing
+   ========================================================================== */
+
+.gform_wrapper {
+    textarea {
+        &.textarea.small {
+            height: 90px;
+        }
+
+        &.textarea.medium {
+            height: 150px;
+        }
+
+        &.textarea.large {
+            height: 300px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Halves
+   ========================================================================== */
+
+@include notmobile {
+    .gfield.gf_left_half {
+        float: left;
+        width: calc( 100% / 2 - 10px );
+        margin-right: 10px;
+        clear: left !important;
+    }
+
+    .gfield.gf_right_half {
+        float: left;
+        width: calc( 100% / 2 - 10px );
+        margin-left: 10px;
+        clear: right !important;
+    }
+}
+
+
+/* ==========================================================================
+   Thirds
+   ========================================================================== */
+
+@include notmobile {
+    .gfield.gf_left_third {
+        float: left;
+        width: calc( 100% / 3 - 10px );
+        margin-right: 10px;
+        clear: left !important;
+    }
+
+    .gfield.gf_middle_third {
+        float: left;
+        width: calc( 100% / 3 - 20px );
+        margin-left: 10px;
+        margin-right: 10px;
+        clear: none !important;
+    }
+
+    .gfield.gf_right_third {
+        float: left;
+        width: calc( 100% / 3 - 10px );
+        margin-left: 10px;
+        clear: right !important;
+    }
+}
+
+
+/* ==========================================================================
+   List inline
+   ========================================================================== */
+
+@include notmobile {
+    .gform_wrapper {
+        .gfield.gf_list_inline {
+            ul.gfield_radio,
+            ul.gfield_checkbox {
+                > li {
+                    display: inline-block;
+                    margin: 0 15px 15px 0;
+
+                    input {
+                        margin: 0;
+                    }
+
+                    input,
+                    label {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

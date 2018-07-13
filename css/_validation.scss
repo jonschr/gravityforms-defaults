@@ -1,0 +1,14 @@
+.gform_wrapper {
+    .validation_message,
+    .validation_error {
+        display: none;
+    }
+
+    .gfield_error {
+        input,
+        select,
+        textarea {
+            border: 5px solid red;
+        }
+    }
+}

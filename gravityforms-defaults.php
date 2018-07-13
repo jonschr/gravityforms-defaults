@@ -30,3 +30,16 @@ define( 'GF_DEFAULTS', dirname( __FILE__ ) );
 //////////////////////////
 
 add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
+
+////////////////////////
+// SCRIPTS AND STYLES //
+////////////////////////
+
+add_action( 'gform_enqueue_scripts', 'gfdefaults_enqueue_scripts_styles' );
+function gfdefaults_enqueue_scripts_styles() {
+
+	// Main style
+    wp_enqueue_style( 'gf-default-style', plugin_dir_url( __FILE__ ) . 'css/gf-default-style.css' );
+
+}
