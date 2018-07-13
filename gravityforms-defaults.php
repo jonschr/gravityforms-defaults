@@ -42,4 +42,7 @@ function gfdefaults_enqueue_scripts_styles() {
 	// Main style
     wp_enqueue_style( 'gf-default-style', plugin_dir_url( __FILE__ ) . 'css/gf-default-style.css' );
 
+    // Reset errors
+    // wp_enqueue_script( 'gf-default-reset-error', plugin_dir_url( __FILE__ ) . 'js/reset-error.js', array( 'jquery' ) );
+    
 }

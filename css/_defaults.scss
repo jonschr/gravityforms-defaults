@@ -5,6 +5,7 @@
 .gform_wrapper {
     padding-top: 30px;
     margin-bottom: 20px;
+    clear: both;
 
     &:first-child {
         padding-top: 0;
@@ -21,14 +22,16 @@
     .gform_fields {
         list-style: none !important;
         padding: 0 !important;
-        margin: 0 0 20px !important;
+        margin: 0 !important;
         line-height: 1em !important;
         text-align: left;
+        transition: .5s all ease;
 
         .gfield {
             list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             clear: both;
+            transition: .5s all ease;
 
             label {
                 line-height: 1em;
@@ -48,13 +51,14 @@
    ========================================================================== */
 
 .gform_wrapper {
-    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+    input:not([type="radio"]):not([type="checkbox"]),
     textarea,
     select {
         width: 100%;
         height: 45px;
         padding-left: 15px;
         font-size: 1em;
+        transition: .5s all ease;
     }
 
     select {
@@ -67,6 +71,17 @@
         padding-top: 15px;
         padding-right: 15px;
         height: 90px;
+    }
+
+    .gform_footer input[type="submit"] {
+        width: auto;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .gform_ajax_spinner {
+        display: none;
     }
 }
 

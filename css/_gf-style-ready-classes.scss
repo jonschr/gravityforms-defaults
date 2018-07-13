@@ -28,6 +28,12 @@
         width: calc( 100% / 2 - 10px );
         margin-right: 10px;
         clear: left !important;
+
+        // &.hidden-label {
+        //     width: calc( 100% / 2 - 5px );
+        //     margin-left: 5px;
+        // }
+   
     }
 
     .gfield.gf_right_half {
@@ -35,6 +41,12 @@
         width: calc( 100% / 2 - 10px );
         margin-left: 10px;
         clear: right !important;
+
+        // &.hidden-label {
+        //     width: calc( 100% / 2 - 5px );
+        //     margin-right: 5px;
+        // }
+   
     }
 }
 
