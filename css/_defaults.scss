@@ -51,7 +51,7 @@
    ========================================================================== */
 
 .gform_wrapper {
-    input:not([type="radio"]):not([type="checkbox"]),
+    input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
     textarea,
     select {
         width: 100%;
@@ -82,6 +82,30 @@
 
     .gform_ajax_spinner {
         display: none;
+    }
+}
+
+/* ==========================================================================
+   Upload
+   ========================================================================== */
+
+.gform_wrapper {
+    .gform_drop_area {
+        border: 4px dashed rgba(gray, 0.5);
+        background: rgba(gray, 0.2);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .gform_wrapper .gform_button_select_files {
+        margin-left: 10px;
+
+        @include mobile {
+            display: block;
+            margin: 10px auto 0;
+            text-align: center !important;
+        }
     }
 }
 
