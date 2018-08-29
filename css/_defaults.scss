@@ -156,6 +156,40 @@
 }
 
 /* ==========================================================================
+   Names
+   ========================================================================== */
+
+@include notmobile {
+    .gfield {
+        clear: both;
+
+        .has_first_name.no_middle_name.has_last_name {
+            clear: both;
+            display: block;
+            float: left;
+            margin-bottom: 10px;
+
+            span.name_first {
+                display: block;
+                float: left;
+                width: calc( 100% / 2 - 5px );
+                margin-right: 5px;
+                clear: left !important;
+            }
+
+            span.name_last {
+                display: block;
+                float: left;
+                width: calc( 100% / 2 - 5px );
+                margin-left: 5px;
+                clear: right !important;
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
    Hidden fields
    ========================================================================== */
 
