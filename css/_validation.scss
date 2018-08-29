@@ -8,8 +8,14 @@
         input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
         textarea,
         select {
-            border: 5px solid red;
-            padding-left: 10px;
+            border: 5px solid red !important;
+            padding-left: 10px !important;
+        }
+
+        ul.gfield_checkbox {
+            label {
+                color: red !important;
+            }
         }
     }
 }
