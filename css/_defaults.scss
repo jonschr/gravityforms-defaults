@@ -130,13 +130,15 @@
         list-style: none !important;
         padding: 5px 0 0 !important;
         margin: 0 !important;
-        line-height: 1em !important;
+        line-height: 1.2em !important;
 
         > li {
             list-style: none;
             margin-bottom: 5px;
             display: flex;
             align-items: center;
+            position: relative;
+            padding-left: 20px;
 
             input,
             label {
@@ -146,10 +148,14 @@
             label {
                 display: block;
                 margin-bottom: 0 !important;
+                line-height: 1.2em !important;
             }
 
             input {
                 margin-right: 5px;
+                left: 0;
+                top: 0;
+                position: absolute;
             }
         }
     }
