@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Horizontal forms
+   ========================================================================== */
+
+.gform_wrapper.gf_simple_horizontal_wrapper {
+    margin-top: 0;
+    padding-top: 0;
+
+    form.gf_simple_horizontal {
+        @include notmobile {
+            // Let's display the entire form as a grid
+            display: grid;
+
+            // grid-template-columns: minmax(auto, auto) auto;
+            grid-template-columns: auto 200px;
+
+            // justify-items: center;
+            // justify-content: center;
+            align-items: center;
+            grid-column-gap: 10px;
+
+            .gform_heading {
+                // grid-column: 1 / -1;
+                grid-column: span 2;
+            }
+
+            .gform_body {
+                width: 100%;
+
+                .gform_fields {
+                    display: flex;
+                }
+
+                .gfield {
+                    flex: 0 1 auto;
+                    clear: none;
+                    float: none;
+                    padding: 0 5px;
+                    width: 100%;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .gform_footer {
+                input[type="submit"] {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
