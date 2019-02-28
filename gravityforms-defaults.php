@@ -3,7 +3,7 @@
     Plugin Name: Gravity Forms Defaults
     Plugin URI: https://elod.in
     Description: Some defaults for Gravity Forms which allow for placeholders and add appropriate styles
-    Version: 0.2
+    Version: 0.2.1
     Author: Jon Schroeder
     Author URI: https://elod.in
 
