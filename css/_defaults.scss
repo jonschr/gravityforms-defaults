@@ -34,12 +34,41 @@
             transition: .5s all ease;
             padding: 0;
 
+            //* Label defaults
             label {
                 line-height: 1em;
-                margin-bottom: 5px;
+                margin-bottom: 0;
                 display: block;
+                font-size: 13px;
+                margin-top: 3px;
+            }
+
+            //* Labels above
+            label.gfield_label {
+                font-size: inherit;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+
+            //* Labels when it's a radio or checkbox
+            li[class^="gchoice_"] {
+                label {
+                    line-height: 1em;
+                    margin-bottom: inherit;
+                    display: inherit;
+                    font-size: 15px;
+                    margin-top: inherit;
+                }
+            }
+
+            //* Inline lists need a little extra
+            &.gf_list_inline {
+                input[type="checkbox"] {
+                    margin-top: 3px;
+                }
             }
         }
+
     }
 
     .gform_validation_container {
@@ -129,6 +158,7 @@
    ========================================================================== */
 
 .gform_wrapper {
+
     .gfield_radio,
     .gfield_checkbox {
         list-style: none !important;
@@ -136,7 +166,7 @@
         margin: 0 !important;
         line-height: 1.2em !important;
 
-        > li {
+        >li {
             list-style: none;
             margin-bottom: 5px;
             display: flex;
@@ -172,6 +202,8 @@
 @include notmobile {
     .gfield {
         clear: both;
+        float: left;
+        width: 100%;
 
         .has_first_name.no_middle_name.has_last_name {
             clear: both;
@@ -183,7 +215,7 @@
             span.name_first {
                 display: block;
                 float: left;
-                width: calc( 100% / 2 - 5px );
+                width: calc(100% / 2 - 5px);
                 margin-right: 5px;
                 clear: left !important;
             }
@@ -191,7 +223,7 @@
             span.name_last {
                 display: block;
                 float: left;
-                width: calc( 100% / 2 - 5px );
+                width: calc(100% / 2 - 5px);
                 margin-left: 5px;
                 clear: right !important;
             }
@@ -202,6 +234,10 @@
 
 @include mobile {
     .gfield {
+        clear: both;
+        float: left;
+        width: 100%;
+
         .has_first_name.no_middle_name.has_last_name {
             span.name_first {
                 margin-bottom: 10px;
@@ -210,6 +246,22 @@
         }
     }
 }
+
+/* ==========================================================================
+   Clearing floats for containers
+   ========================================================================== */
+
+.ginput_complex {
+    width: 100%;
+    float: left;
+    clear: both;
+
+    span[class^="ginput_"] {
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
 
 
 /* ==========================================================================
