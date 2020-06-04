@@ -1,4 +1,5 @@
 .gform_wrapper {
+
     input,
     textarea {
         &:-webkit-input-placeholder {
@@ -31,31 +32,4 @@
             opacity: 1 !important;
         }
     }
-
-    // input:focus,
-    // textarea:focus {
-    //     &:-webkit-input-placeholder {
-    //         color: gray !important;
-    //     }
-
-    //     &::-moz-placeholder {
-    //         color: gray !important;
-    //     }
-
-    //     &:-ms-input-placeholder {
-    //         color: gray !important;
-    //     }
-
-    //     &:-moz-placeholder {
-    //         color: gray !important;
-    //     }
-
-    //     &::placeholder {
-    //         color: gray !important;
-    //     }
-
-    //     &:placeholder {
-    //         color: gray !important;
-    //     }
-    // }
 }

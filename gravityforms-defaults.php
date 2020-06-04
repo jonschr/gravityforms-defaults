@@ -3,7 +3,7 @@
     Plugin Name: Gravity Forms Defaults
     Plugin URI: https://elod.in
     Description: Some defaults for Gravity Forms which allow for placeholders and add appropriate styles
-    Version: 0.2.3
+    Version: 1.0
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -26,7 +26,7 @@
 define( 'GF_DEFAULTS', dirname( __FILE__ ) );
 
 // Version
-define( 'GF_DEFAULTS_VERSION', '0.2.3' );
+define( 'GF_DEFAULTS_VERSION', '1.0' );
 
 //////////////////////////
 // PLUGIN CUSTOMIZATION //
@@ -65,3 +65,13 @@ function gfdefaults_enqueue_scripts_styles() {
     
 }
 
+// Updater
+require 'vendor/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/jonschr/gravityforms-defaults',
+	__FILE__,
+	'gravityforms-defaults'
+);
+
+// Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');

@@ -1,0 +1,24 @@
+{
+  "name": "gravityforms-defaults",
+  "version": "1.0.0",
+  "description": "Just another gravity forms style defaults addon",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jonschr@github.com/jonschr/gravityforms-defaults.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonschr/gravityforms-defaults/issues"
+  },
+  "homepage": "https://github.com/jonschr/gravityforms-defaults#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
