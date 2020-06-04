@@ -7,10 +7,6 @@
     margin-bottom: 20px;
     clear: both;
 
-    &:first-child {
-        padding-top: 0;
-    }
-
     &:last-child {
         margin-bottom: 0;
     }
@@ -150,6 +146,10 @@
     .gsection {
         padding: 30px 0 15px !important;
         margin: 0 !important;
+
+        &:first-child {
+            padding-top: 0 !important;
+        }
     }
 }
 

@@ -61,23 +61,23 @@
 @include notmobile {
     .gfield.gf_left_third {
         float: left;
-        width: calc(100% / 3 - 10px);
-        margin-right: 10px;
+        width: calc(100% / 3 - 5px);
+        margin-right: 5px;
         clear: left !important;
     }
 
     .gfield.gf_middle_third {
         float: left;
-        width: calc(100% / 3 - 20px);
-        margin-left: 10px;
-        margin-right: 10px;
+        width: calc(100% / 3 - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
         clear: none !important;
     }
 
     .gfield.gf_right_third {
         float: left;
-        width: calc(100% / 3 - 10px);
-        margin-left: 10px;
+        width: calc(100% / 3 - 5px);
+        margin-left: 5px;
         clear: right !important;
     }
 }
