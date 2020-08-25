@@ -1,0 +1,10 @@
+.gform_next_button,
+.gform_previous_button {
+    width: auto !important;
+}
+
+form[enctype="multipart/form-data"] {
+    .gform_button {
+        width: auto !important;
+    }
+}

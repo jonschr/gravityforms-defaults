@@ -1,0 +1,17 @@
+.gf_page_steps {
+    display: flex;
+    flex-flow: row wrap;
+
+    .gf_step {
+        margin: 0 10px 20px;
+        opacity: 0.5;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &.gf_step_active {
+            opacity: 1;
+        }
+    }
+}

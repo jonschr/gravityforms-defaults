@@ -1,0 +1,9 @@
+.gform_drop_area {
+    .gform_button_select_files {
+        width: auto !important;
+
+        @media(min-width: 600px) {
+            margin-left: 10px;
+        }
+    }
+}
