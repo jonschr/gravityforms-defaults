@@ -1,3 +1,7 @@
+### 1.1 
+* Adding styles for some previously unstyled elements, including steps, uploads, etc.
+* Fixes to defaults for radio buttons when inline
+
 ### 1.0.3 
 * BUGFIX: select elements were cutting off the top and bottom on some browsers
 
