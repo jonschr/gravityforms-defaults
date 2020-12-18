@@ -117,6 +117,34 @@
 }
 
 /* ==========================================================================
+   Consent
+   ========================================================================== */
+
+.gform_wrapper {
+    .ginput_container_consent {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: flex-start;
+
+        >label {
+            padding-left: 8px;
+        }
+
+        >input {
+            top: 3px;
+            position: relative;
+        }
+    }
+
+    .gfield_consent_description {
+        max-height: 200px;
+        overflow-y: scroll;
+        background-color: rgba(gray, 0.2);
+        padding: 20px;
+    }
+}
+
+/* ==========================================================================
    Upload
    ========================================================================== */
 
